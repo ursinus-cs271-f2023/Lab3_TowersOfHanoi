@@ -1,6 +1,4 @@
-import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
 from stack import Stack
 import matplotlib.patches as patches
 
