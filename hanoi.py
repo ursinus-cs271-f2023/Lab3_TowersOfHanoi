@@ -52,9 +52,9 @@ class Hanoi:
         Move the top n pegs from the source to the target,
         using the free area as a staging area if necessary.
         Hint: 
-        1) Recursively move the top n-1 pegs out of the way
-        2) Move the bottom-most peg, then draw with self.draw_frame()
-        3) Recursively move the top n-1 pegs over the bottom-most one
+        1) Recursively move the top n-1 discs out of the way
+        2) Move the nth disc from the source to the target, then draw with self.draw_frame()
+        3) Recursively move the top n-1 discs over the nth one
         """
         ## TODO: Fill this in
         pass
