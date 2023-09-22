@@ -14,7 +14,7 @@ class Hanoi:
             
     def draw_frame(self):
         """
-        Draw the pegs where they currently are, and increment the frame number
+        Draw the discs where they currently are, and increment the frame number
         """
         plt.clf()
         ax = plt.gca()
@@ -40,28 +40,31 @@ class Hanoi:
         Parameters
         ----------
         source: stack
-            A stack of pegs and their sizes that are currently at
-            our source location
+            A stack of discs and their sizes that are currently at
+            our source peg
         free: stack
-            A stack of pegs at a location that can be used as a staging area
+            A stack of discs at a peg that can be used as a staging area
         target: stack
-            A stack of pegs at a location where we want to put the source pegs
+            A stack of discs at a peg where we want to put the source discs
         n: int
-            The top n pegs should be moved from the source to the target
+            The top n discs should be moved from the source peg to the target peg
 
-        Move the top n pegs from the source to the target,
+        Move the top n discs from the source to the target,
         using the free area as a staging area if necessary.
         Hint: 
         1) Recursively move the top n-1 discs out of the way
         2) Move the nth disc from the source to the target, then draw with self.draw_frame()
         3) Recursively move the top n-1 discs over the nth one
+
+        When you're finished, check the directory in which you
+        ran this code for a bunch of pictures showing the steps!
         """
         ## TODO: Fill this in
         pass
     
     def solve(self):
         """
-        Do an animation of the pegs
+        Do an animation of the discs
         """
         fscale = 0.5
         plt.figure(figsize=(fscale*(self._N*3+3), fscale*(self._N+1)))
